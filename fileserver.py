@@ -14,7 +14,7 @@ wallet = Wallet()
 payment = Payment(app, wallet)
 
 # directory of the digital content we'd like to sell
-dir_path = '/home/twenty/sellfiles'
+dir_path = '/home/twenty/workspace/fileserver/sellfiles'
 
 # get a list of the files in the directory
 file_list = os.listdir(dir_path)
@@ -53,4 +53,4 @@ def buy_file():
 
 if __name__ == '__main__':
     # app.debug = True
-    app.run(host='::')
+    app.run(host='::', port='5000')
